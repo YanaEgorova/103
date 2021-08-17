@@ -108,6 +108,9 @@ button:focus {
   color: inherit;
   font-weight: inherit;
   font-size: inherit;
+  background-image: url('../img/img4.jpeg');
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .btn::before {
   display: block;
@@ -184,5 +187,10 @@ button:focus {
   }
   .btn:hover {
     color: var(--sub-bg-color);
+  }
+  .btn:hover span {
+    background-image: none;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: var(--main-text-color);
   }
 }
