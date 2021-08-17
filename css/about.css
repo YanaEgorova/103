@@ -1,0 +1,27 @@
+.about {
+    padding: 10rem 0;
+}
+.about .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.about .item:not(:last-child) {
+    margin-bottom: 2rem;
+}
+.about .img {
+    height: 50rem;
+    object-fit: cover;
+    margin-bottom: 0;
+}
+@media screen and (min-width: 1024px)  {
+    .about .list  {
+        display: flex;
+    }
+    .about .item:not(:last-child) {
+        margin-bottom: 0;
+    }
+    .text-block {
+        padding: 0 2rem;
+    }
+}
